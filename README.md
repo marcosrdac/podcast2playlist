@@ -12,9 +12,9 @@ xsltproc
 - change destination folders and script folder in code and save
 - chmod +x podcast2playlist.sh
 - nano rssfeeds.txt
-- paste rss feeds, 1 per line, like 
+- paste rss feeds, 1 per line, like
 - OVT;http://radiobox2.omroep.nl/rss/ug/programme/28.rss
-  
+
 ##Usage:
 - /home/volumio/podcast2playlist/podcast2playlist.sh
 
@@ -22,5 +22,5 @@ or something like
 
 - crontab -e
 - 0 * * * * /home/volumio/podcast2playlist/podcast2playlist.sh
-  
+
 

@@ -10,7 +10,7 @@
 <xsl:template match="item">
 <xsl:variable name="item_enclosure" select="enclosure/@url"/>
 <xsl:if test="string-length(enclosure/@url) > 10">
-#EXTINF:0,<xsl:value-of select="title" /> - <xsl:value-of select="pubDate" />
+#EXTINF:0,<xsl:value-of select="translate(title,'&#xA;&#xD;','')"/> - <xsl:value-of select="pubDate" />
     <xsl:value-of select="'&#10;'"/>
 <xsl:value-of select="enclosure/@url" />
 </xsl:if>
